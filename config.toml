@@ -1,0 +1,70 @@
+baseURL = 'https://embroiderymachine.tech/'
+languageCode = 'en-US'
+defaultContentLanguage = 'en-us'
+title = 'EmbroideryMachine.tech: Explore Embroidery Machines, Patterns & Designs' # Title on Meta Tags
+paginate = 20
+theme = 'alpha'
+enableRobotsTXT = true
+disableKinds = ['section', 'posts']
+
+[permalinks]
+  posts = '/:title/'
+  pages = '/:title/'
+
+
+[taxonomies]
+  category = 'categories'
+
+[outputs]
+  page = ['HTML']
+  home = ['HTML','RSS']
+  section = ['HTML']
+  taxonomyTerm = ['HTML']
+  taxonomy = ['HTML']
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = 'application/rss'
+    baseName = 'rss'    
+
+[params]
+  title = 'EmbroideryMachine.tech' # Title on Header
+  tagline = 'Ignite Your Creativity!'
+  description = 'Discover the best embroidery machines, patterns, and designs at EmbroideryMachine.tech. Enhance your skills, stay on top of trends, and create stunning projects with our expert resources.'
+  author = 'EmbroideryMaster'
+  recentposts = 18
+
+[menu]
+
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 2
+
+  [[menu.main]]
+    identifier = 'privacy-policy'
+    name = 'Privacy Policy'
+    url = '/privacy-policy/'
+    weight = 3
+
+  [[menu.main]]
+    identifier = 'dmca'
+    name = 'DMCA'
+    url = '/dmca/'
+    weight = 4
+
+# [menu]
+
+#   [[menu.socialsidebar]]
+#     identifier = 'facebook'
+#     name = 'facebook'
+#     url = '#'
+#     icon = '<i class='fa fa-facebook'></i>'
+#     weight = '1'
